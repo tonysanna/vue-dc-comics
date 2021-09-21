@@ -74,4 +74,43 @@ export default {
 }
 </script>
 
+<style scoped lang="scss">
+@import "../style/mood";
+@import "../style/mixing";
 
+header {
+    height: 125px;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+    max-width: 75%;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+
+
+        li a {
+            color: black;
+            display: flex;
+            padding: 0 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 10px;
+
+  
+            &active {
+                color: $primary
+            }
+
+
+
+  
+        }
+    }   
+}
+</style>

@@ -73,3 +73,96 @@ export default {
     name:'Footer'
 }
 </script>
+
+<style scoped lang="scss">
+@import "../style/mood";
+
+.footer-top {
+    height: 400px;
+    width: 100%;
+    background-image: url(../assets/img/footer-bg.jpg);
+    background-size: cover;
+    background-position: top;
+
+    .container-t {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        height: 100%;
+        margin: 0 auto;
+
+        .col-sx-t {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 100%;
+            width: 40%;
+            padding: 25px 0;
+
+            h3 {
+                color: $light;
+                margin: 18px 0;
+            }
+
+            li {
+                font-size: 12px;
+                color: rgb(116, 113, 113);
+                width: 150px;
+                margin: 4px 0;
+            }
+        }
+        
+        .col-dx-t {
+            width: 595px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.footer-bott {
+    width: 100%;
+    height: 110px;
+    background-color: #464545;
+
+    .container-b {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 70%;
+        margin: 0 auto;
+
+        .col-sx-b button {
+            width: 130px;
+            height: 50px;
+            background-color: #464545;
+            border: 3px solid $primary;
+            color: honeydew;
+            font-size: 15px;
+
+        }
+        
+
+        .col-dx-b {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin: 0 8px;
+            }
+
+            h3 {
+                color: $primary;
+                margin-left: 18px;
+            }
+        }
+    }
+}
+
+
+</style>
